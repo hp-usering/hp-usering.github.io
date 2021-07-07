@@ -49,6 +49,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#examples">节日习俗</a>
             </li>
+           
             <li class="nav-item">
               <a class="nav-link" href="https://hp-usering.github.io/首页/" target="_blank" class="btn btn-indigo" >返回首页</a>
             </li>
@@ -327,6 +328,29 @@
 
       </section>
       <!--Section: Examples-->
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+  // MDB Lightbox Init
+  $(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  });
+  // 以下为动画效果新添加的两条语句
+  // Adding animations to the sections, 使用的是淡入, 你也可以试试zoomIn等动画
+  $("section").addClass("wow fadeIn");
+  // Animations Init, 注意必须放在ready方法中以防WOW对象没能加载成功
+  $(document).ready(function () {
+    new WOW().init();
+  });
+</script>
 
  
 
